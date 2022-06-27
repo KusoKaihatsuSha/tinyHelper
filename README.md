@@ -1,11 +1,12 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![godoc](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper?status.svg)](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper)[![Go Report Card](https://goreportcard.com/badge/github.com/KusoKaihatsuSha/tinyHelper)](https://goreportcard.com/report/github.com/KusoKaihatsuSha/tinyHelper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![godoc](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper?status.svg)](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper)[![Go Report](https://goreportcard.com/badge/github.com/KusoKaihatsuSha/tinyHelper)](https://goreportcard.com/report/github.com/KusoKaihatsuSha/tinyHelper)
 
 # Source package with the some helping functions
+
 > ```
-> SliceRotate
-> SliceSort
-> ToNum
-> ToStr
+> SliceRotate - Rotate slice or rotate even/odd pair
+> SliceSort   - Wrapper for sorting slice
+> ToNum       - Wrapper for convert into numerable types
+> ToStr       - Wrapper for convert to string by 'fmt.Sprintf'
 > ```
 
 ### Examples:
@@ -15,7 +16,6 @@ package main
 
 import (
 	"fmt"
-
 	helper "github.com/KusoKaihatsuSha/tinyHelper"
 )
 
