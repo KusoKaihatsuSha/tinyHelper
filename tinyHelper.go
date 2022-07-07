@@ -1,3 +1,5 @@
+// Package tinyHelper as wrappers - shorters
+// with the some helping functions
 package tinyHelper
 
 import (
@@ -49,7 +51,7 @@ func toBaseOther(v, base int) string {
 // ToBase[GeneralTypes](T, int, int, ...int) string
 // Wrapper for convert from one base to another base
 func ToBase[T GeneralTypes](val T, from, to int, prefixNulls ...int) (nv string) {
-    to10 := ToInt(val, from)
+	to10 := ToInt(val, from)
 	nv = ToStr(to10)
 	prx := ""
 	if prefixNulls != nil || len(prefixNulls) > 0 {
@@ -63,7 +65,7 @@ func ToBase[T GeneralTypes](val T, from, to int, prefixNulls ...int) (nv string)
 	case 16:
 		nv = fmt.Sprintf("%"+prfBase+prx+Base16, to10)
 	default:
-        nv = fmt.Sprintf("%"+prfBase+prx+"v", toBaseOther(to10, to))
+		nv = fmt.Sprintf("%"+prfBase+prx+"v", toBaseOther(to10, to))
 	}
 	return
 }
@@ -82,15 +84,15 @@ func ToNum[T1 NumsTypes, T GeneralTypes](val T, base ...int) T1 {
 	// Del prefix. Parse values with prefix 0b, 0o, 0x works if base '0' value in parameter.
 	if len(f) >= 2 {
 		switch {
-        case f[:2] == (prfBase + Base02) && parBase == 16:
-        case f[:2] == (prfBase + Base02):
-            parBase = 2
+		case f[:2] == (prfBase+Base02) && parBase == 16:
+		case f[:2] == (prfBase + Base02):
+			parBase = 2
 			f = f[2:]
 		case f[:2] == (prfBase + Base08):
-            parBase = 8
+			parBase = 8
 			f = f[2:]
 		case f[:2] == (prfBase + Base16):
-            parBase = 16
+			parBase = 16
 			f = f[2:]
 		}
 	}
