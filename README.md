@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![godoc](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper?status.svg)](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper)[![Go Report Card](https://goreportcard.com/badge/github.com/KusoKaihatsuSha/tinyHelper?)](https://goreportcard.com/report/github.com/KusoKaihatsuSha/tinyHelper?)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![godoc](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper?status.svg)](https://godoc.org/github.com/KusoKaihatsuSha/tinyHelper) [![Go Report Card](https://goreportcard.com/badge/github.com/KusoKaihatsuSha/tinyHelper?)](https://goreportcard.com/report/github.com/KusoKaihatsuSha/tinyHelper?)
 
 # Source package with the some helping functions
 
